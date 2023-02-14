@@ -53,6 +53,7 @@ namespace KnowYourStudents
             // "jpg", "jpeg", "png", "bmp", "svg"
             foreach (FileInfo file in allImagesInFolder)
             {
+                // TODO Split Name and remove file extension
                 Student student = new Student(file.Name, file.FullName);
                 classFromImages.Students.Add(student);
             }
