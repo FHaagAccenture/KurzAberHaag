@@ -20,16 +20,26 @@ namespace KnowYourStudents
             this.Text = HomeWindow.selectedComponent;
 
             // Create or update the JSON for this class
-            jsonHandler.UpdateOrCreateClassJson(HomeWindow.selectedComponent);
+            JsonHandler.UpdateOrCreateClassJson(HomeWindow.selectedComponent);
 
             // Load the Class Object from the JSON
-            // SomeType myClass = jsonHandler.LoadClassFromClassJson()
+            // SomeType myClass = JsonHandler.LoadClassFromClassJson()
 
+            SchoolClass testClass = JsonHandler.LoadClassJson();
 
+            foreach ( Student student in testClass.Students)
+            {
+                lbTest.Items.Add(student.Name);
+            }
             // Display Students from Class
             // Load shit from myClass into some Forms Element
 
             // Select Game Mode
+        }
+
+        private void lbTest_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
 
         // TODO:

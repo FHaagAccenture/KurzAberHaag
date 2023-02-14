@@ -28,12 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.lbTest = new System.Windows.Forms.ListBox();
+            this.SuspendLayout();
+            // 
+            // lbTest
+            // 
+            this.lbTest.FormattingEnabled = true;
+            this.lbTest.ItemHeight = 16;
+            this.lbTest.Location = new System.Drawing.Point(68, 56);
+            this.lbTest.Name = "lbTest";
+            this.lbTest.Size = new System.Drawing.Size(127, 228);
+            this.lbTest.TabIndex = 0;
+            this.lbTest.SelectedIndexChanged += new System.EventHandler(this.lbTest_SelectedIndexChanged);
+            // 
+            // ClassOverview
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(272, 450);
+            this.Controls.Add(this.lbTest);
+            this.Name = "ClassOverview";
             this.Text = "ClassOverview";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.ListBox lbTest;
     }
 }

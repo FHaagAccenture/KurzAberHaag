@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{2F905B85-45B1-4E16-A9EC-C82066386E75}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <RootNamespace>KnowYourStudents</RootNamespace>
     <AssemblyName>KnowYourStudents</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -34,6 +34,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -92,9 +95,14 @@
     <Compile Include="HomeWindow.Designer.cs">
       <DependentUpon>HomeWindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="jsonHandler.cs" />
+    <Compile Include="JsonHandler.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SchoolClass.cs" />
+    <Compile Include="Student.cs" />
+    <EmbeddedResource Include="ClassOverview.resx">
+      <DependentUpon>ClassOverview.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HomeWindow.resx">
       <DependentUpon>HomeWindow.cs</DependentUpon>
     </EmbeddedResource>
