@@ -1,0 +1,76 @@
+{
+  "Students": [
+    {
+      "Name": "Ali Becker",
+      "ImgPath": "C:\\Users\\frederik.haag\\source\\repos\\KurzAberHaag\\KnowYourStudents\\bin\\Debug\\db\\IT69b\\Ali_Becker.jpg",
+      "Appeared": 0,
+      "GotCorrect": 0,
+      "Score": 0
+    },
+    {
+      "Name": "Caroline Zimmer",
+      "ImgPath": "C:\\Users\\frederik.haag\\source\\repos\\KurzAberHaag\\KnowYourStudents\\bin\\Debug\\db\\IT69b\\Caroline_Zimmer.jpg",
+      "Appeared": 0,
+      "GotCorrect": 0,
+      "Score": 0
+    },
+    {
+      "Name": "G\u00FCnter Klatsch",
+      "ImgPath": "C:\\Users\\frederik.haag\\source\\repos\\KurzAberHaag\\KnowYourStudents\\bin\\Debug\\db\\IT69b\\G\u00FCnter_Klatsch.jpg",
+      "Appeared": 0,
+      "GotCorrect": 0,
+      "Score": 0
+    },
+    {
+      "Name": "Horst Gro\u00DF",
+      "ImgPath": "C:\\Users\\frederik.haag\\source\\repos\\KurzAberHaag\\KnowYourStudents\\bin\\Debug\\db\\IT69b\\Horst_Gro\u00DF.jpg",
+      "Appeared": 0,
+      "GotCorrect": 0,
+      "Score": 0
+    },
+    {
+      "Name": "Marcel Beck",
+      "ImgPath": "C:\\Users\\frederik.haag\\source\\repos\\KurzAberHaag\\KnowYourStudents\\bin\\Debug\\db\\IT69b\\Marcel_Beck.jpg",
+      "Appeared": 0,
+      "GotCorrect": 0,
+      "Score": 0
+    },
+    {
+      "Name": "Martin M\u00FCller",
+      "ImgPath": "C:\\Users\\frederik.haag\\source\\repos\\KurzAberHaag\\KnowYourStudents\\bin\\Debug\\db\\IT69b\\Martin_M\u00FCller.jpg",
+      "Appeared": 0,
+      "GotCorrect": 0,
+      "Score": 0
+    },
+    {
+      "Name": "Susanne Bauer",
+      "ImgPath": "C:\\Users\\frederik.haag\\source\\repos\\KurzAberHaag\\KnowYourStudents\\bin\\Debug\\db\\IT69b\\Susanne_Bauer.jpg",
+      "Appeared": 0,
+      "GotCorrect": 0,
+      "Score": 0
+    },
+    {
+      "Name": "Sven Fleck",
+      "ImgPath": "C:\\Users\\frederik.haag\\source\\repos\\KurzAberHaag\\KnowYourStudents\\bin\\Debug\\db\\IT69b\\Sven_Fleck.jpg",
+      "Appeared": 0,
+      "GotCorrect": 0,
+      "Score": 0
+    },
+    {
+      "Name": "Tom Schmitt",
+      "ImgPath": "C:\\Users\\frederik.haag\\source\\repos\\KurzAberHaag\\KnowYourStudents\\bin\\Debug\\db\\IT69b\\Tom_Schmitt.jpg",
+      "Appeared": 0,
+      "GotCorrect": 0,
+      "Score": 0
+    },
+    {
+      "Name": "Ursular Klein",
+      "ImgPath": "C:\\Users\\frederik.haag\\source\\repos\\KurzAberHaag\\KnowYourStudents\\bin\\Debug\\db\\IT69b\\Ursular_Klein.jpg",
+      "Appeared": 0,
+      "GotCorrect": 0,
+      "Score": 0
+    }
+  ],
+  "SchoolClassName": "IT69b",
+  "ProgressTotal": 0
+}

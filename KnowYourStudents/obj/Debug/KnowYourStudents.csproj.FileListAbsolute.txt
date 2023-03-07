@@ -63,3 +63,4 @@ C:\Users\frederik.haag\source\repos\KurzAberHaag\KnowYourStudents\obj\Debug\Know
 C:\Users\frederik.haag\source\repos\KurzAberHaag\KnowYourStudents\obj\Debug\KnowYourStudents.exe
 C:\Users\frederik.haag\source\repos\KurzAberHaag\KnowYourStudents\obj\Debug\KnowYourStudents.pdb
 C:\Users\frederik.haag\source\repos\KurzAberHaag\KnowYourStudents\obj\Debug\KnowYourStudents.ClassOverview.resources
+C:\Users\frederik.haag\source\repos\KurzAberHaag\KnowYourStudents\obj\Debug\KnowYourStudents.StudentImageZoom.resources

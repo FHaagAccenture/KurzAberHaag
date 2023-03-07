@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace KnowYourStudents
 {
-    internal class SchoolClass
+    public class SchoolClass
     {
         public List<Student> Students { get; set; }
-        public string ClassName { get; set; }
+        public string SchoolClassName { get; set; }
         public int ProgressTotal { get; set; }
 
-        public SchoolClass(string className)
+        public SchoolClass(string schoolClassName)
         {
-            ClassName = className;
+            SchoolClassName = schoolClassName;
             Students = new List<Student>();
             ProgressTotal = 0;
         }

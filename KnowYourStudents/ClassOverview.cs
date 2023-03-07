@@ -12,38 +12,75 @@ namespace KnowYourStudents
 {
     public partial class ClassOverview : Form
     {
-        public ClassOverview()
+        private SchoolClass schoolClass;
+        private HomeWindow homeWindow;
+        public ClassOverview(string selectedClass, HomeWindow homeWindow)
         {
             InitializeComponent();
 
-            // Load selected item from HomeWindow to determine current class
-            this.Text = HomeWindow.selectedComponent;
+            this.Text = selectedClass; // Set window title dynamically
+            this.homeWindow = homeWindow;
 
-            // Create or update the JSON for this class
-            JsonHandler.UpdateOrCreateClassJson(HomeWindow.selectedComponent);
-
-            // Load the Class Object from the JSON
-            // SomeType myClass = JsonHandler.LoadClassFromClassJson()
-
-            SchoolClass testClass = JsonHandler.LoadClassJson();
-
-            foreach ( Student student in testClass.Students)
+            // Load school class from name
+            schoolClass = JsonHandler.LoadSchoolClass(selectedClass);
+            if (schoolClass != null)
             {
-                lbTest.Items.Add(student.Name);
+                loadStudentImages();
             }
-            // Display Students from Class
-            // Load shit from myClass into some Forms Element
-
-            // Select Game Mode
+            else
+            {
+                MessageBox.Show("Klasse konnte nicht geladen werden, prüfen sie den Ornder und Dateiformate!", "Warnung",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
-        private void lbTest_SelectedIndexChanged(object sender, EventArgs e)
+        private void loadStudentImages()
         {
 
+            // Populate ImageList
+            ImageList studentImages = new ImageList();
+            studentImages.ImageSize = new Size(80, 100); // Make sizing dynamic?
+            foreach (Student student in schoolClass.Students)
+            {
+                studentImages.Images.Add(student.Name, Image.FromFile(student.ImgPath));
+            }
+
+            // Add ImageList to Listview
+            lvSchoolClass.LargeImageList = studentImages;
+
+            // Create and Display ListViewItems
+            foreach (Student student in schoolClass.Students)
+            {
+                ListViewItem studentItem = new ListViewItem();
+                studentItem.Text = student.Name;
+                studentItem.ImageKey = student.Name;
+                lvSchoolClass.Items.Add(studentItem);
+            }
         }
 
-        // TODO:
-        // - Handle going back to HomeWindow
-        // - Add Zoom to Students
+        // Handle Zoom
+        private void lvSchoolClass_Click(object sender, EventArgs e)
+        {
+            ListViewItem selectedStudent = lvSchoolClass.SelectedItems[0];
+
+            foreach(Student student in schoolClass.Students)
+            {
+                if (student.Name == selectedStudent.Text)
+                {
+                    
+                    StudentImageZoom studentImageZoom = new StudentImageZoom(student);
+                    studentImageZoom.Show();
+                    break;
+                }
+                                
+            }
+        }
+
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            homeWindow.Show();
+        }
     }
 }

@@ -1,1 +1,34 @@
-{"Students":[{"Name":"Sch\u00FCler Drei.jpg","ImgPath":"C:\\Users\\frederik.haag\\source\\repos\\KurzAberHaag\\KnowYourStudents\\bin\\Debug\\db\\Class 2\\Sch\u00FCler Drei.jpg","Appeared":0,"GotCorrect":0,"Score":0},{"Name":"Sch\u00FCler Eins.jpg","ImgPath":"C:\\Users\\frederik.haag\\source\\repos\\KurzAberHaag\\KnowYourStudents\\bin\\Debug\\db\\Class 2\\Sch\u00FCler Eins.jpg","Appeared":0,"GotCorrect":0,"Score":0},{"Name":"Sch\u00FCler Vier.jpg","ImgPath":"C:\\Users\\frederik.haag\\source\\repos\\KurzAberHaag\\KnowYourStudents\\bin\\Debug\\db\\Class 2\\Sch\u00FCler Vier.jpg","Appeared":0,"GotCorrect":0,"Score":0},{"Name":"Sch\u00FCler Zwei.jpg","ImgPath":"C:\\Users\\frederik.haag\\source\\repos\\KurzAberHaag\\KnowYourStudents\\bin\\Debug\\db\\Class 2\\Sch\u00FCler Zwei.jpg","Appeared":0,"GotCorrect":0,"Score":0}],"ClassName":"Class 2","ProgressTotal":0}
+{
+  "Students": [
+    {
+      "Name": "Sch\u00FCler Drei",
+      "ImgPath": "C:\\Users\\frederik.haag\\source\\repos\\KurzAberHaag\\KnowYourStudents\\bin\\Debug\\db\\Class 2\\Sch\u00FCler Drei.jpg",
+      "Appeared": 0,
+      "GotCorrect": 0,
+      "Score": 0
+    },
+    {
+      "Name": "Sch\u00FCler Eins",
+      "ImgPath": "C:\\Users\\frederik.haag\\source\\repos\\KurzAberHaag\\KnowYourStudents\\bin\\Debug\\db\\Class 2\\Sch\u00FCler Eins.jpg",
+      "Appeared": 0,
+      "GotCorrect": 0,
+      "Score": 0
+    },
+    {
+      "Name": "Sch\u00FCler Vier",
+      "ImgPath": "C:\\Users\\frederik.haag\\source\\repos\\KurzAberHaag\\KnowYourStudents\\bin\\Debug\\db\\Class 2\\Sch\u00FCler Vier.jpg",
+      "Appeared": 0,
+      "GotCorrect": 0,
+      "Score": 0
+    },
+    {
+      "Name": "Sch\u00FCler Zwei",
+      "ImgPath": "C:\\Users\\frederik.haag\\source\\repos\\KurzAberHaag\\KnowYourStudents\\bin\\Debug\\db\\Class 2\\Sch\u00FCler Zwei.jpg",
+      "Appeared": 0,
+      "GotCorrect": 0,
+      "Score": 0
+    }
+  ],
+  "SchoolClassName": "Class 2",
+  "ProgressTotal": 0
+}

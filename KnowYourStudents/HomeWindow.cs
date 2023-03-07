@@ -13,8 +13,6 @@ namespace KnowYourStudents
 {
     public partial class HomeWindow : Form
     {
-        public static string selectedComponent = null;
-
         public HomeWindow()
         {
             InitializeComponent();
@@ -35,19 +33,17 @@ namespace KnowYourStudents
             // Check that a class is selected
             if (lbClasses.SelectedItems.Count == 1)
             {
-                // Make the selected class accessible for other forms
-                selectedComponent = lbClasses.SelectedItems[0].ToString();
+                string selectedClass = lbClasses.SelectedItems[0].ToString();
 
-                // Open Class Overview and close this window
-                ClassOverview ow = new ClassOverview();
+                // Open Class Overview and hide this form
+                ClassOverview classOverview = new ClassOverview(selectedClass, this);
+                classOverview.Show();   
                 this.Hide();
-                ow.ShowDialog();
-                this.Close();
             }
             else
             {
-                // TODO
-                // Display a warning like "Select a class!"
+                MessageBox.Show("Wählen sie eine Klasse aus. Werden keine Klassen angezeigt überprüfen Sie, dass die Klassen im korrekten Ornder liegen!", "Warnung",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

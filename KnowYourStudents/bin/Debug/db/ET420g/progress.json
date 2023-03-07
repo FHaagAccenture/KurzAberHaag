@@ -1,0 +1,48 @@
+{
+  "Students": [
+    {
+      "Name": "Anna Stock",
+      "ImgPath": "C:\\Users\\frederik.haag\\source\\repos\\KurzAberHaag\\KnowYourStudents\\bin\\Debug\\db\\ET420g\\Anna_Stock.jpg",
+      "Appeared": 0,
+      "GotCorrect": 0,
+      "Score": 0
+    },
+    {
+      "Name": "Bill Rech",
+      "ImgPath": "C:\\Users\\frederik.haag\\source\\repos\\KurzAberHaag\\KnowYourStudents\\bin\\Debug\\db\\ET420g\\Bill_Rech.jpg",
+      "Appeared": 0,
+      "GotCorrect": 0,
+      "Score": 0
+    },
+    {
+      "Name": "Gustav Gustavson",
+      "ImgPath": "C:\\Users\\frederik.haag\\source\\repos\\KurzAberHaag\\KnowYourStudents\\bin\\Debug\\db\\ET420g\\Gustav_Gustavson.jpg",
+      "Appeared": 0,
+      "GotCorrect": 0,
+      "Score": 0
+    },
+    {
+      "Name": "Jens Grie\u00DFmann",
+      "ImgPath": "C:\\Users\\frederik.haag\\source\\repos\\KurzAberHaag\\KnowYourStudents\\bin\\Debug\\db\\ET420g\\Jens_Grie\u00DFmann.jpg",
+      "Appeared": 0,
+      "GotCorrect": 0,
+      "Score": 0
+    },
+    {
+      "Name": "Marc Hansen",
+      "ImgPath": "C:\\Users\\frederik.haag\\source\\repos\\KurzAberHaag\\KnowYourStudents\\bin\\Debug\\db\\ET420g\\Marc_Hansen.jpg",
+      "Appeared": 0,
+      "GotCorrect": 0,
+      "Score": 0
+    },
+    {
+      "Name": "Till Haubeck",
+      "ImgPath": "C:\\Users\\frederik.haag\\source\\repos\\KurzAberHaag\\KnowYourStudents\\bin\\Debug\\db\\ET420g\\Till_Haubeck.jpg",
+      "Appeared": 0,
+      "GotCorrect": 0,
+      "Score": 0
+    }
+  ],
+  "SchoolClassName": "ET420g",
+  "ProgressTotal": 0
+}

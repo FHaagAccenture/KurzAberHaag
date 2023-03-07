@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace KnowYourStudents
 {
-    internal class Student
+    public class Student
     {
         // TODO Split Name at some delimiter
         public string Name { get; set; }
