@@ -70,6 +70,7 @@
             this.Controls.Add(this.btnSelectClass);
             this.Controls.Add(this.lbClasses);
             this.Name = "HomeWindow";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Know Your Students";
             this.ResumeLayout(false);
 

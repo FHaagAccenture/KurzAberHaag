@@ -11,17 +11,13 @@ namespace KnowYourStudents
         // TODO Split Name at some delimiter
         public string Name { get; set; }
         public string ImgPath { get; set; }
-        public int Appeared { get; set; }
-        public int GotCorrect { get; set; }
-        public int Score { get; set; }
+        public int LearningProgress { get; set; }
 
         public Student(string name, string imgPath)
         {
             Name = name;
             ImgPath = imgPath;
-            Appeared = 0;
-            GotCorrect = 0;
-            Score = 0;
+            LearningProgress = 0;
         }
     }
 }

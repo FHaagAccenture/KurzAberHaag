@@ -82,5 +82,13 @@ namespace KnowYourStudents
             this.Close();
             homeWindow.Show();
         }
+
+        private void btnStartGame1_Click(object sender, EventArgs e)
+        {
+            Spellchecker spellchecker = new Spellchecker(schoolClass, this);
+            spellchecker.Show();
+            this.Hide();
+        }
     }
 }
+

@@ -30,7 +30,7 @@
         {
             this.lvSchoolClass = new System.Windows.Forms.ListView();
             this.btnBack = new System.Windows.Forms.Button();
-            this.btnStartGame1 = new System.Windows.Forms.Button();
+            this.btnStartSpellchecker = new System.Windows.Forms.Button();
             this.btnStartGame2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -54,14 +54,15 @@
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // btnStartGame1
+            // btnStartSpellchecker
             // 
-            this.btnStartGame1.Location = new System.Drawing.Point(653, 12);
-            this.btnStartGame1.Name = "btnStartGame1";
-            this.btnStartGame1.Size = new System.Drawing.Size(102, 23);
-            this.btnStartGame1.TabIndex = 2;
-            this.btnStartGame1.Text = "Spiel 1 starten";
-            this.btnStartGame1.UseVisualStyleBackColor = true;
+            this.btnStartSpellchecker.Location = new System.Drawing.Point(600, 12);
+            this.btnStartSpellchecker.Name = "btnStartSpellchecker";
+            this.btnStartSpellchecker.Size = new System.Drawing.Size(155, 23);
+            this.btnStartSpellchecker.TabIndex = 2;
+            this.btnStartSpellchecker.Text = "Spellchecker starten";
+            this.btnStartSpellchecker.UseVisualStyleBackColor = true;
+            this.btnStartSpellchecker.Click += new System.EventHandler(this.btnStartGame1_Click);
             // 
             // btnStartGame2
             // 
@@ -78,10 +79,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(875, 402);
             this.Controls.Add(this.btnStartGame2);
-            this.Controls.Add(this.btnStartGame1);
+            this.Controls.Add(this.btnStartSpellchecker);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.lvSchoolClass);
             this.Name = "ClassOverview";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ClassOverview";
             this.ResumeLayout(false);
 
@@ -91,7 +93,7 @@
 
         private System.Windows.Forms.ListView lvSchoolClass;
         private System.Windows.Forms.Button btnBack;
-        private System.Windows.Forms.Button btnStartGame1;
+        private System.Windows.Forms.Button btnStartSpellchecker;
         private System.Windows.Forms.Button btnStartGame2;
     }
 }
