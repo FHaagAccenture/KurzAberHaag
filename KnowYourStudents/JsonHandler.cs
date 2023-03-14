@@ -9,7 +9,7 @@ using System.Text.Json;
 
 namespace KnowYourStudents
 {
-    internal class JsonHandler
+    internal static class JsonHandler
     {
         // Change to allow different file extension for images
         // Careful: They need to be compatible with Windows Forms
@@ -20,7 +20,7 @@ namespace KnowYourStudents
         private static FileInfo classJson;
         private static string schoolClassName;
         
-        // Only exposed function that will be called from outside of JSON-Handler
+        // Exposed function to load school class by name as well as generate/update the JSON for it
         public static SchoolClass LoadSchoolClass(string ClassName)
         {
             schoolClassName = ClassName;
@@ -35,9 +35,28 @@ namespace KnowYourStudents
                 return null;
             }
         }
+
+        // Exposed function to save generic school class
+        public static void SaveSchoolClass(SchoolClass schoolClass)
+        {
+            try
+            {
+                // Open Folder
+                classDirectory = new DirectoryInfo(Application.StartupPath + "//db//" + schoolClass.SchoolClassName);
+
+                // Save to file in opened folder
+                CreateJsonFileFromSchoolClass(schoolClass);
+            }
+            catch(Exception ex)
+            {
+               // Console.WriteLine(ex);
+               // Add more sophisticated Error Handling
+               // For now just making sure application doesn't crash
+            }
+
+        }
         
-        // First Entry Point
-        // This function will always run first
+        // Main Entry Point for loading and updating JSON
         private static void UpdateOrCreateSchoolClassJson()
         {
             // Open Folder
@@ -69,9 +88,7 @@ namespace KnowYourStudents
                         // Maybe make copy better
                         studentFromFiles.Name = studentFromJson.Name;
                         studentFromFiles.ImgPath = studentFromJson.ImgPath;
-                        studentFromFiles.Appeared = studentFromJson.Appeared;
-                        studentFromFiles.GotCorrect = studentFromJson.GotCorrect;
-                        studentFromFiles.Score = studentFromJson.Score;
+                        studentFromFiles.LearningProgress = studentFromJson.LearningProgress;
                     }
                 }
             }
