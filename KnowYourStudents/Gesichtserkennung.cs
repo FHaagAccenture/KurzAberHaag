@@ -33,33 +33,12 @@ namespace KnowYourStudents
             random = new Random();
             timeDelayBetweenStudents.Interval = timeBetweenStudents;
             loadNewStudent();
-           
-        }
-
-        // Do not touch
-        // Cumulative weighted randomizer algorithm
-        private void determineNextStudent()
-        {
-            int weightSum = 0;
-            List<int> weights = new List<int>();
-            foreach (Student student in schoolClass.Students)
-            {
-                weightSum = weightSum + (101 - student.LearningProgress);
-                weights.Add(weightSum);
-            }
-            int randomNummer = random.Next(weightSum);
-            int index = 0;
-            while (weights[index] < randomNummer)
-            {
-                index++;
-            }
-            activeStudent = schoolClass.Students[index];
         }
 
         private void loadNewStudent()
         {
             // Get next active Student
-            determineNextStudent();
+            activeStudent = GameHanlder.determineNextStudent(schoolClass);
 
             // Clear Data
             lblInfo.Text = "Klicke auf " + activeStudent.Name;

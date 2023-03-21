@@ -8,7 +8,6 @@ namespace KnowYourStudents
 {
     public class Student
     {
-        // TODO Split Name at some delimiter
         public string Name { get; set; }
         public string ImgPath { get; set; }
         public int LearningProgress { get; set; }
