@@ -35,11 +35,12 @@ namespace KnowYourStudents
         private void loadNewStudent()
         {
             // Get next active Student
-            activeStudent = GameHanlder.determineNextStudent(schoolClass);
+            activeStudent = GameHandler.determineNextStudent(schoolClass);
 
             // Clear Form, Info & Backcolor
             tbStudentName.Text = "";
             lbWinLooseInfo.Text = "";
+            tbStudentName.Enabled = true;
             pnlControls.BackColor = Color.MistyRose;   
 
             // Load and scale new Image
@@ -65,6 +66,7 @@ namespace KnowYourStudents
                 lbWinLooseInfo.Text = "Richtig! Weiter so!";
                 LearnProgressHandler.IncreaseStudentProgress(activeStudent, progressPerWin);
                 pnlControls.BackColor = Color.Green;
+                tbStudentName.Enabled = false;
                 timeDelayBetweenStudents.Enabled = true;
             } 
             else
@@ -72,6 +74,7 @@ namespace KnowYourStudents
                 // Got Name wrong
                 lbWinLooseInfo.Text = "Leider falsch! Richtig wäre: " + activeStudent.Name;
                 pnlControls.BackColor = Color.Red;
+                tbStudentName.Enabled = false;
                 timeDelayBetweenStudents.Enabled = true;
             }
         }

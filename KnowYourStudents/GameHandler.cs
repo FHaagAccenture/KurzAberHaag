@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace KnowYourStudents
 {
-    internal class GameHanlder
+    internal class GameHandler
     {
         private static Random random;
         // Cumulative weighted randomizer algorithm

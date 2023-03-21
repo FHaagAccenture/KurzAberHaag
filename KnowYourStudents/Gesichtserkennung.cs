@@ -38,7 +38,7 @@ namespace KnowYourStudents
         private void loadNewStudent()
         {
             // Get next active Student
-            activeStudent = GameHanlder.determineNextStudent(schoolClass);
+            activeStudent = GameHandler.determineNextStudent(schoolClass);
 
             // Clear Data
             lblInfo.Text = "Klicke auf " + activeStudent.Name;
@@ -73,12 +73,6 @@ namespace KnowYourStudents
                 }
             }
 
-            Console.Clear();
-            for (int i = 0; i < selectedStudents.Count; i++)
-            {
-                Console.WriteLine(selectedStudents[i].Name);
-            }
-
             // Shuffle selected Students in place
             // Fisher-Yates Shuffle
             for (int i = selectedStudents.Count - 1; i > 0; i--)
@@ -87,11 +81,6 @@ namespace KnowYourStudents
                 Student temp = selectedStudents[rand];
                 selectedStudents[rand] = selectedStudents[i];
                 selectedStudents[i] = temp;
-            }
-            Console.WriteLine("");
-            for (int i = 0; i < selectedStudents.Count; i++)
-            {
-                Console.WriteLine(selectedStudents[i].Name);
             }
 
             // Load Students into picture boxes
@@ -157,18 +146,22 @@ namespace KnowYourStudents
 
         private void evaluatePick(int selection)
         {
-            if (selectedStudents[selection] == activeStudent)
+            // Check if timer is currently running
+            if (timeDelayBetweenStudents.Enabled == false)
             {
-                LearnProgressHandler.IncreaseStudentProgress(activeStudent, progressPerWin);
-                lbWinLooseInfo.Text = "Richtig! Weiter so!";
-                BackColor = Color.Green;
-                timeDelayBetweenStudents.Enabled = true;
-            }
-            else
-            {
-                lbWinLooseInfo.Text = "Leider falsch! Du hast auf " + selectedStudents[selection].Name + " geklickt.";
-                BackColor = Color.Red;
-                timeDelayBetweenStudents.Enabled = true;
+                if (selectedStudents[selection] == activeStudent)
+                {
+                    LearnProgressHandler.IncreaseStudentProgress(activeStudent, progressPerWin);
+                    lbWinLooseInfo.Text = "Richtig! Weiter so!";
+                    BackColor = Color.Green;
+                    timeDelayBetweenStudents.Enabled = true;
+                }
+                else
+                {
+                    lbWinLooseInfo.Text = "Leider falsch! Du hast auf " + selectedStudents[selection].Name + " geklickt.";
+                    BackColor = Color.Red;
+                    timeDelayBetweenStudents.Enabled = true;
+                }
             }
         }
     }

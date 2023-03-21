@@ -83,7 +83,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GameHanlder.cs" />
+    <Compile Include="GameHandler.cs" />
     <Compile Include="ClassOverview.cs">
       <SubType>Form</SubType>
     </Compile>

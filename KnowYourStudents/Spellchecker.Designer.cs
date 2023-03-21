@@ -45,10 +45,10 @@
             // 
             this.btnBack.BackColor = System.Drawing.Color.DarkSalmon;
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBack.Location = new System.Drawing.Point(18, 10);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBack.Location = new System.Drawing.Point(24, 12);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(200, 25);
+            this.btnBack.Size = new System.Drawing.Size(267, 31);
             this.btnBack.TabIndex = 0;
             this.btnBack.Text = "Fortschritt Speichern und Zurück";
             this.btnBack.UseVisualStyleBackColor = false;
@@ -56,29 +56,29 @@
             // 
             // pbStudent
             // 
-            this.pbStudent.Location = new System.Drawing.Point(18, 44);
-            this.pbStudent.Margin = new System.Windows.Forms.Padding(2);
+            this.pbStudent.Location = new System.Drawing.Point(24, 54);
+            this.pbStudent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbStudent.Name = "pbStudent";
-            this.pbStudent.Size = new System.Drawing.Size(300, 8);
+            this.pbStudent.Size = new System.Drawing.Size(400, 10);
+            this.pbStudent.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbStudent.TabIndex = 5;
             this.pbStudent.TabStop = false;
             // 
             // tbStudentName
             // 
-            this.tbStudentName.Location = new System.Drawing.Point(13, 50);
-            this.tbStudentName.Margin = new System.Windows.Forms.Padding(2);
+            this.tbStudentName.Location = new System.Drawing.Point(17, 62);
+            this.tbStudentName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbStudentName.Name = "tbStudentName";
-            this.tbStudentName.Size = new System.Drawing.Size(216, 20);
+            this.tbStudentName.Size = new System.Drawing.Size(287, 22);
             this.tbStudentName.TabIndex = 6;
             this.tbStudentName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbStudentName_KeyDown);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(10, 35);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(13, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(173, 15);
+            this.label1.Size = new System.Drawing.Size(188, 16);
             this.label1.TabIndex = 7;
             this.label1.Text = "Name des Schülers eingeben:";
             // 
@@ -86,10 +86,10 @@
             // 
             this.btnSubmitStudentName.BackColor = System.Drawing.Color.LightSalmon;
             this.btnSubmitStudentName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSubmitStudentName.Location = new System.Drawing.Point(244, 47);
-            this.btnSubmitStudentName.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSubmitStudentName.Location = new System.Drawing.Point(325, 58);
+            this.btnSubmitStudentName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSubmitStudentName.Name = "btnSubmitStudentName";
-            this.btnSubmitStudentName.Size = new System.Drawing.Size(56, 25);
+            this.btnSubmitStudentName.Size = new System.Drawing.Size(75, 31);
             this.btnSubmitStudentName.TabIndex = 8;
             this.btnSubmitStudentName.Text = "Fertig!";
             this.btnSubmitStudentName.UseVisualStyleBackColor = false;
@@ -98,10 +98,9 @@
             // lbWinLooseInfo
             // 
             this.lbWinLooseInfo.AutoSize = true;
-            this.lbWinLooseInfo.Location = new System.Drawing.Point(10, 11);
-            this.lbWinLooseInfo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbWinLooseInfo.Location = new System.Drawing.Point(13, 14);
             this.lbWinLooseInfo.Name = "lbWinLooseInfo";
-            this.lbWinLooseInfo.Size = new System.Drawing.Size(10, 15);
+            this.lbWinLooseInfo.Size = new System.Drawing.Size(10, 16);
             this.lbWinLooseInfo.TabIndex = 9;
             this.lbWinLooseInfo.Text = " ";
             // 
@@ -115,22 +114,22 @@
             this.pnlControls.Controls.Add(this.lbWinLooseInfo);
             this.pnlControls.Controls.Add(this.btnSubmitStudentName);
             this.pnlControls.Controls.Add(this.label1);
-            this.pnlControls.Location = new System.Drawing.Point(18, 449);
-            this.pnlControls.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlControls.Location = new System.Drawing.Point(24, 553);
+            this.pnlControls.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlControls.Name = "pnlControls";
-            this.pnlControls.Size = new System.Drawing.Size(300, 78);
+            this.pnlControls.Size = new System.Drawing.Size(400, 96);
             this.pnlControls.TabIndex = 10;
             // 
             // Spellchecker
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
-            this.ClientSize = new System.Drawing.Size(335, 534);
+            this.ClientSize = new System.Drawing.Size(447, 657);
             this.Controls.Add(this.pnlControls);
             this.Controls.Add(this.pbStudent);
             this.Controls.Add(this.btnBack);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Spellchecker";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Spellchecker";
