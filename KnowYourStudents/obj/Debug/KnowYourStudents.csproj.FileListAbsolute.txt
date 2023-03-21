@@ -65,3 +65,4 @@ C:\Users\frederik.haag\source\repos\KurzAberHaag\KnowYourStudents\obj\Debug\Know
 C:\Users\frederik.haag\source\repos\KurzAberHaag\KnowYourStudents\obj\Debug\KnowYourStudents.ClassOverview.resources
 C:\Users\frederik.haag\source\repos\KurzAberHaag\KnowYourStudents\obj\Debug\KnowYourStudents.StudentImageZoom.resources
 C:\Users\frederik.haag\source\repos\KurzAberHaag\KnowYourStudents\obj\Debug\KnowYourStudents.Spellchecker.resources
+C:\Users\frederik.haag\source\repos\KurzAberHaag\KnowYourStudents\obj\Debug\KnowYourStudents.Gesichtserkennung.resources

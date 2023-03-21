@@ -14,6 +14,7 @@ namespace KnowYourStudents
     {
         private SchoolClass schoolClass;
         private HomeWindow homeWindow;
+        private bool backButtonUsed = false;
         public ClassOverview(string selectedClass, HomeWindow homeWindow)
         {
             InitializeComponent();
@@ -79,8 +80,8 @@ namespace KnowYourStudents
 
         private void btnBack_Click(object sender, EventArgs e)
         {
+            backButtonUsed = true;
             this.Close();
-            homeWindow.Show();
         }
 
         private void btnStartGame1_Click(object sender, EventArgs e)
@@ -88,6 +89,36 @@ namespace KnowYourStudents
             Spellchecker spellchecker = new Spellchecker(schoolClass, this);
             spellchecker.Show();
             this.Hide();
+        }
+
+
+        // Determine if back button or X was used to close form
+        private void ClassOverview_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (backButtonUsed)
+            {
+                homeWindow.Show();
+            }
+            else
+            {
+                homeWindow.Close();
+            }
+        }
+
+        private void btnStartGame2_Click(object sender, EventArgs e)
+        {
+            // Check that at least three students are in class, otherwise game would not run
+            if (schoolClass.Students.Count < 3)
+            {
+                MessageBox.Show("Damit sie dieses Spiel spielen könenn müssen mindestens drei Schüler in ihrer Klasse sein!", "Warnung",
+                MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                Gesichtserkennung gesichtserkennung = new Gesichtserkennung(schoolClass, this);
+                gesichtserkennung.Show();
+                this.Hide();
+            }
         }
     }
 }

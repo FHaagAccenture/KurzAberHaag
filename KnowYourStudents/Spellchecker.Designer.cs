@@ -36,60 +36,72 @@
             this.btnSubmitStudentName = new System.Windows.Forms.Button();
             this.lbWinLooseInfo = new System.Windows.Forms.Label();
             this.timeDelayBetweenStudents = new System.Windows.Forms.Timer(this.components);
+            this.pnlControls = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pbStudent)).BeginInit();
+            this.pnlControls.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(24, 12);
+            this.btnBack.BackColor = System.Drawing.Color.DarkSalmon;
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.Location = new System.Drawing.Point(18, 10);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(2);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(157, 23);
+            this.btnBack.Size = new System.Drawing.Size(200, 25);
             this.btnBack.TabIndex = 0;
-            this.btnBack.Text = "Speichern und Zurück";
-            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Text = "Fortschritt Speichern und Zurück";
+            this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // pbStudent
             // 
-            this.pbStudent.Location = new System.Drawing.Point(24, 54);
+            this.pbStudent.Location = new System.Drawing.Point(18, 44);
+            this.pbStudent.Margin = new System.Windows.Forms.Padding(2);
             this.pbStudent.Name = "pbStudent";
-            this.pbStudent.Size = new System.Drawing.Size(400, 10);
+            this.pbStudent.Size = new System.Drawing.Size(300, 8);
             this.pbStudent.TabIndex = 5;
             this.pbStudent.TabStop = false;
             // 
             // tbStudentName
             // 
-            this.tbStudentName.Location = new System.Drawing.Point(15, 643);
+            this.tbStudentName.Location = new System.Drawing.Point(13, 50);
+            this.tbStudentName.Margin = new System.Windows.Forms.Padding(2);
             this.tbStudentName.Name = "tbStudentName";
-            this.tbStudentName.Size = new System.Drawing.Size(303, 22);
+            this.tbStudentName.Size = new System.Drawing.Size(216, 20);
             this.tbStudentName.TabIndex = 6;
             this.tbStudentName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbStudentName_KeyDown);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 624);
+            this.label1.Location = new System.Drawing.Point(10, 35);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(188, 16);
+            this.label1.Size = new System.Drawing.Size(173, 15);
             this.label1.TabIndex = 7;
             this.label1.Text = "Name des Schülers eingeben:";
             // 
             // btnSubmitStudentName
             // 
-            this.btnSubmitStudentName.Location = new System.Drawing.Point(349, 638);
+            this.btnSubmitStudentName.BackColor = System.Drawing.Color.LightSalmon;
+            this.btnSubmitStudentName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSubmitStudentName.Location = new System.Drawing.Point(244, 47);
+            this.btnSubmitStudentName.Margin = new System.Windows.Forms.Padding(2);
             this.btnSubmitStudentName.Name = "btnSubmitStudentName";
-            this.btnSubmitStudentName.Size = new System.Drawing.Size(75, 32);
+            this.btnSubmitStudentName.Size = new System.Drawing.Size(56, 25);
             this.btnSubmitStudentName.TabIndex = 8;
             this.btnSubmitStudentName.Text = "Fertig!";
-            this.btnSubmitStudentName.UseVisualStyleBackColor = true;
+            this.btnSubmitStudentName.UseVisualStyleBackColor = false;
             this.btnSubmitStudentName.Click += new System.EventHandler(this.btnSubmitStudentName_Click);
             // 
             // lbWinLooseInfo
             // 
             this.lbWinLooseInfo.AutoSize = true;
-            this.lbWinLooseInfo.Location = new System.Drawing.Point(12, 608);
+            this.lbWinLooseInfo.Location = new System.Drawing.Point(10, 11);
+            this.lbWinLooseInfo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbWinLooseInfo.Name = "lbWinLooseInfo";
-            this.lbWinLooseInfo.Size = new System.Drawing.Size(10, 16);
+            this.lbWinLooseInfo.Size = new System.Drawing.Size(10, 15);
             this.lbWinLooseInfo.TabIndex = 9;
             this.lbWinLooseInfo.Text = " ";
             // 
@@ -97,22 +109,36 @@
             // 
             this.timeDelayBetweenStudents.Tick += new System.EventHandler(this.timeDelayBetweenStudents_Tick);
             // 
+            // pnlControls
+            // 
+            this.pnlControls.Controls.Add(this.tbStudentName);
+            this.pnlControls.Controls.Add(this.lbWinLooseInfo);
+            this.pnlControls.Controls.Add(this.btnSubmitStudentName);
+            this.pnlControls.Controls.Add(this.label1);
+            this.pnlControls.Location = new System.Drawing.Point(18, 449);
+            this.pnlControls.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlControls.Name = "pnlControls";
+            this.pnlControls.Size = new System.Drawing.Size(300, 78);
+            this.pnlControls.TabIndex = 10;
+            // 
             // Spellchecker
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(447, 687);
-            this.Controls.Add(this.lbWinLooseInfo);
-            this.Controls.Add(this.btnSubmitStudentName);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.tbStudentName);
+            this.BackColor = System.Drawing.Color.MistyRose;
+            this.ClientSize = new System.Drawing.Size(335, 534);
+            this.Controls.Add(this.pnlControls);
             this.Controls.Add(this.pbStudent);
             this.Controls.Add(this.btnBack);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Spellchecker";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Spellchecker";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Spellchecker_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pbStudent)).EndInit();
+            this.pnlControls.ResumeLayout(false);
+            this.pnlControls.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -125,5 +151,6 @@
         private System.Windows.Forms.Button btnSubmitStudentName;
         private System.Windows.Forms.Label lbWinLooseInfo;
         private System.Windows.Forms.Timer timeDelayBetweenStudents;
+        private System.Windows.Forms.Panel pnlControls;
     }
 }

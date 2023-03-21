@@ -37,54 +37,68 @@
             // lvSchoolClass
             // 
             this.lvSchoolClass.HideSelection = false;
-            this.lvSchoolClass.Location = new System.Drawing.Point(12, 59);
+            this.lvSchoolClass.Location = new System.Drawing.Point(9, 48);
+            this.lvSchoolClass.Margin = new System.Windows.Forms.Padding(2);
             this.lvSchoolClass.Name = "lvSchoolClass";
-            this.lvSchoolClass.Size = new System.Drawing.Size(852, 331);
+            this.lvSchoolClass.Size = new System.Drawing.Size(640, 270);
             this.lvSchoolClass.TabIndex = 0;
             this.lvSchoolClass.UseCompatibleStateImageBehavior = false;
             this.lvSchoolClass.Click += new System.EventHandler(this.lvSchoolClass_Click);
             // 
             // btnBack
             // 
-            this.btnBack.Location = new System.Drawing.Point(12, 13);
+            this.btnBack.BackColor = System.Drawing.Color.DarkSalmon;
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.Location = new System.Drawing.Point(9, 11);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(2);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(75, 23);
+            this.btnBack.Size = new System.Drawing.Size(56, 25);
             this.btnBack.TabIndex = 1;
             this.btnBack.Text = "Zurück";
-            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnStartSpellchecker
             // 
-            this.btnStartSpellchecker.Location = new System.Drawing.Point(600, 12);
+            this.btnStartSpellchecker.BackColor = System.Drawing.Color.LightSalmon;
+            this.btnStartSpellchecker.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStartSpellchecker.Location = new System.Drawing.Point(379, 10);
+            this.btnStartSpellchecker.Margin = new System.Windows.Forms.Padding(2);
             this.btnStartSpellchecker.Name = "btnStartSpellchecker";
-            this.btnStartSpellchecker.Size = new System.Drawing.Size(155, 23);
+            this.btnStartSpellchecker.Size = new System.Drawing.Size(116, 25);
             this.btnStartSpellchecker.TabIndex = 2;
             this.btnStartSpellchecker.Text = "Spellchecker starten";
-            this.btnStartSpellchecker.UseVisualStyleBackColor = true;
+            this.btnStartSpellchecker.UseVisualStyleBackColor = false;
             this.btnStartSpellchecker.Click += new System.EventHandler(this.btnStartGame1_Click);
             // 
             // btnStartGame2
             // 
-            this.btnStartGame2.Location = new System.Drawing.Point(761, 12);
+            this.btnStartGame2.BackColor = System.Drawing.Color.LightSalmon;
+            this.btnStartGame2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStartGame2.Location = new System.Drawing.Point(499, 10);
+            this.btnStartGame2.Margin = new System.Windows.Forms.Padding(2);
             this.btnStartGame2.Name = "btnStartGame2";
-            this.btnStartGame2.Size = new System.Drawing.Size(102, 23);
+            this.btnStartGame2.Size = new System.Drawing.Size(148, 25);
             this.btnStartGame2.TabIndex = 3;
-            this.btnStartGame2.Text = "Spiel 2 starten";
-            this.btnStartGame2.UseVisualStyleBackColor = true;
+            this.btnStartGame2.Text = "Gesichtserkennung starten";
+            this.btnStartGame2.UseVisualStyleBackColor = false;
+            this.btnStartGame2.Click += new System.EventHandler(this.btnStartGame2_Click);
             // 
             // ClassOverview
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(875, 402);
+            this.BackColor = System.Drawing.Color.MistyRose;
+            this.ClientSize = new System.Drawing.Size(656, 327);
             this.Controls.Add(this.btnStartGame2);
             this.Controls.Add(this.btnStartSpellchecker);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.lvSchoolClass);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ClassOverview";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ClassOverview";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ClassOverview_FormClosing);
             this.ResumeLayout(false);
 
         }

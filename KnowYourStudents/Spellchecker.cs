@@ -21,6 +21,7 @@ namespace KnowYourStudents
 
         private Random random;
         private ClassOverview parentWindow;
+        private bool backButtonUsed = false;
 
         public Spellchecker(SchoolClass schoolClass, ClassOverview parentWindow)
         {
@@ -29,26 +30,25 @@ namespace KnowYourStudents
             this.parentWindow = parentWindow;
             this.schoolClass = schoolClass;
             random = new Random();
-            pbStudent.SizeMode = PictureBoxSizeMode.StretchImage;
             timeDelayBetweenStudents.Interval = timeBetweenStudents;
             loadNewStudent();
         }
 
+        // Do not touch
+        // Cumulative weighted randomizer algorithm
         private void determineNextStudent()
         {
             int weightSum = 0;
             List<int> weights = new List<int>();
-            foreach(Student student in schoolClass.Students)
+            foreach (Student student in schoolClass.Students)
             {
-                weightSum = weightSum + (100 - student.LearningProgress);
-                weights.Add(100 - student.LearningProgress);
+                weightSum = weightSum + (101 - student.LearningProgress);
+                weights.Add(weightSum);
             }
             int randomNummer = random.Next(weightSum);
             int index = 0;
-            int tempSum = 0;
-            while (tempSum < randomNummer)
+            while (weights[index] < randomNummer)
             {
-                tempSum = tempSum + weights[index];
                 index++;
             }
             activeStudent = schoolClass.Students[index];
@@ -59,9 +59,10 @@ namespace KnowYourStudents
             // Get next active Student
             determineNextStudent();
 
-            // Clear Form and Info 
+            // Clear Form, Info & Backcolor
             tbStudentName.Text = "";
             lbWinLooseInfo.Text = "";
+            pnlControls.BackColor = Color.MistyRose;   
 
             // Load and scale new Image
             Image studentImage = Image.FromFile(activeStudent.ImgPath);
@@ -72,6 +73,10 @@ namespace KnowYourStudents
             pbStudent.Width = (int)fixedImageWidth;
             pbStudent.Height = (int)imageHeight;
             pbStudent.Image = studentImage;
+
+            // Scale window to image lenght & move panel
+            pnlControls.Location = new Point(18, pbStudent.Height + 50);
+            this.Height = pbStudent.Height + 175;
         }
 
         private void btnSubmitStudentName_Click(object sender, EventArgs e)
@@ -81,12 +86,14 @@ namespace KnowYourStudents
                 // Got Name correct
                 lbWinLooseInfo.Text = "Richtig! Weiter so!";
                 LearnProgressHandler.IncreaseStudentProgress(activeStudent, progressPerWin);
+                pnlControls.BackColor = Color.Green;
                 timeDelayBetweenStudents.Enabled = true;
             } 
             else
             {
                 // Got Name wrong
                 lbWinLooseInfo.Text = "Leider falsch! Richtig wäre: " + activeStudent.Name;
+                pnlControls.BackColor = Color.Red;
                 timeDelayBetweenStudents.Enabled = true;
             }
         }
@@ -109,9 +116,22 @@ namespace KnowYourStudents
         private void btnBack_Click(object sender, EventArgs e)
         {
             JsonHandler.SaveSchoolClass(schoolClass);
-
+            backButtonUsed = true;
             this.Close();
+
             parentWindow.Show();
+        }
+
+        private void Spellchecker_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (backButtonUsed)
+            {
+                parentWindow.Show();
+            }
+            else
+            {
+                parentWindow.Close();
+            }
         }
     }
 }

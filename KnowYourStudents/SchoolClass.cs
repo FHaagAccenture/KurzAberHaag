@@ -10,13 +10,11 @@ namespace KnowYourStudents
     {
         public List<Student> Students { get; set; }
         public string SchoolClassName { get; set; }
-        public int ProgressTotal { get; set; }
 
         public SchoolClass(string schoolClassName)
         {
             SchoolClassName = schoolClassName;
             Students = new List<Student>();
-            ProgressTotal = 0;
         }
     }
 }
