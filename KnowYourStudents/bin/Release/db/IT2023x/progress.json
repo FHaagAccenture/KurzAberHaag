@@ -1,0 +1,55 @@
+{
+  "Students": [
+    {
+      "Name": "Ali Becker",
+      "ImgPath": "C:\\Users\\frederik.haag\\source\\repos\\KurzAberHaag\\KnowYourStudents\\bin\\Debug\\db\\IT2023x\\Ali_Becker.jpg",
+      "LearningProgress": 0
+    },
+    {
+      "Name": "Caroline Zimmer",
+      "ImgPath": "C:\\Users\\frederik.haag\\source\\repos\\KurzAberHaag\\KnowYourStudents\\bin\\Debug\\db\\IT2023x\\Caroline_Zimmer.jpg",
+      "LearningProgress": 0
+    },
+    {
+      "Name": "G\u00FCnter Klatsch",
+      "ImgPath": "C:\\Users\\frederik.haag\\source\\repos\\KurzAberHaag\\KnowYourStudents\\bin\\Debug\\db\\IT2023x\\G\u00FCnter_Klatsch.jpg",
+      "LearningProgress": 0
+    },
+    {
+      "Name": "Horst Gro\u00DF",
+      "ImgPath": "C:\\Users\\frederik.haag\\source\\repos\\KurzAberHaag\\KnowYourStudents\\bin\\Debug\\db\\IT2023x\\Horst_Gro\u00DF.jpg",
+      "LearningProgress": 0
+    },
+    {
+      "Name": "Marcel Beck",
+      "ImgPath": "C:\\Users\\frederik.haag\\source\\repos\\KurzAberHaag\\KnowYourStudents\\bin\\Debug\\db\\IT2023x\\Marcel_Beck.jpg",
+      "LearningProgress": 0
+    },
+    {
+      "Name": "Martin M\u00FCller",
+      "ImgPath": "C:\\Users\\frederik.haag\\source\\repos\\KurzAberHaag\\KnowYourStudents\\bin\\Debug\\db\\IT2023x\\Martin_M\u00FCller.jpg",
+      "LearningProgress": 0
+    },
+    {
+      "Name": "Susanne Bauer",
+      "ImgPath": "C:\\Users\\frederik.haag\\source\\repos\\KurzAberHaag\\KnowYourStudents\\bin\\Debug\\db\\IT2023x\\Susanne_Bauer.jpg",
+      "LearningProgress": 0
+    },
+    {
+      "Name": "Sven Fleck",
+      "ImgPath": "C:\\Users\\frederik.haag\\source\\repos\\KurzAberHaag\\KnowYourStudents\\bin\\Debug\\db\\IT2023x\\Sven_Fleck.jpg",
+      "LearningProgress": 0
+    },
+    {
+      "Name": "Tom Schmitt",
+      "ImgPath": "C:\\Users\\frederik.haag\\source\\repos\\KurzAberHaag\\KnowYourStudents\\bin\\Debug\\db\\IT2023x\\Tom_Schmitt.jpg",
+      "LearningProgress": 0
+    },
+    {
+      "Name": "Ursular Klein",
+      "ImgPath": "C:\\Users\\frederik.haag\\source\\repos\\KurzAberHaag\\KnowYourStudents\\bin\\Debug\\db\\IT2023x\\Ursular_Klein.jpg",
+      "LearningProgress": 0
+    }
+  ],
+  "SchoolClassName": "IT2023x"
+}

@@ -39,7 +39,7 @@ namespace KnowYourStudents
             activeStudent = StudentPickHandler.determineNextStudent(schoolClass);
 
             // Clear Data
-            lblInfo.Text = "Klicke auf " + activeStudent.Name;
+            lblInfo.Text = "Klicken Sie auf " + activeStudent.Name;
             lbWinLooseInfo.Text = "";
             BackColor = Color.MistyRose;
             selectedStudents = new List<Student>();

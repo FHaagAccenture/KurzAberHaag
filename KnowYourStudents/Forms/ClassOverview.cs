@@ -31,7 +31,7 @@ namespace KnowYourStudents
             }
             else
             {
-                MessageBox.Show("Klasse konnte nicht geladen werden, prüfen sie den Ornder und Dateiformate!", "Warnung",
+                MessageBox.Show("Klasse konnte nicht geladen werden, prüfen sie den Ordner und Dateiformate!", "Warnung",
                 MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }

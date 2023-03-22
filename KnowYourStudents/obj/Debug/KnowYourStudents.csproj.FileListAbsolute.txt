@@ -66,3 +66,7 @@ C:\Users\frederik.haag\source\repos\KurzAberHaag\KnowYourStudents\obj\Debug\Know
 C:\Users\frederik.haag\source\repos\KurzAberHaag\KnowYourStudents\obj\Debug\KnowYourStudents.StudentImageZoom.resources
 C:\Users\frederik.haag\source\repos\KurzAberHaag\KnowYourStudents\obj\Debug\KnowYourStudents.Spellchecker.resources
 C:\Users\frederik.haag\source\repos\KurzAberHaag\KnowYourStudents\obj\Debug\KnowYourStudents.Gesichtserkennung.resources
+C:\Users\frederik.haag\source\repos\KurzAberHaag\KnowYourStudents\bin\Debug\KnowYourStudents.exe.manifest
+C:\Users\frederik.haag\source\repos\KurzAberHaag\KnowYourStudents\bin\Debug\KnowYourStudents.application
+C:\Users\frederik.haag\source\repos\KurzAberHaag\KnowYourStudents\obj\Debug\KnowYourStudents.exe.manifest
+C:\Users\frederik.haag\source\repos\KurzAberHaag\KnowYourStudents\obj\Debug\KnowYourStudents.application

@@ -44,6 +44,9 @@ namespace KnowYourStudents
                 // Open Folder
                 classDirectory = new DirectoryInfo(Application.StartupPath + "//db//" + schoolClass.SchoolClassName);
 
+                string currentDirectory = Application.StartupPath;
+                DirectoryInfo directoryInfo = new DirectoryInfo(currentDirectory + "//db");
+
                 // Save to file in opened folder
                 CreateJsonFileFromSchoolClass(schoolClass);
             }
