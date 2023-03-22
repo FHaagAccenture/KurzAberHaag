@@ -1,0 +1,35 @@
+{
+  "Students": [
+    {
+      "Name": "Anna Stock",
+      "ImgPath": "C:\\Users\\frederik.haag\\source\\repos\\KurzAberHaag\\KnowYourStudents\\bin\\Debug\\db\\IT2023y\\Anna_Stock.jpg",
+      "LearningProgress": 0
+    },
+    {
+      "Name": "Bill Rech",
+      "ImgPath": "C:\\Users\\frederik.haag\\source\\repos\\KurzAberHaag\\KnowYourStudents\\bin\\Debug\\db\\IT2023y\\Bill_Rech.jpg",
+      "LearningProgress": 0
+    },
+    {
+      "Name": "Gustav Gustavson",
+      "ImgPath": "C:\\Users\\frederik.haag\\source\\repos\\KurzAberHaag\\KnowYourStudents\\bin\\Debug\\db\\IT2023y\\Gustav_Gustavson.jpg",
+      "LearningProgress": 0
+    },
+    {
+      "Name": "Jens Grie\u00DFmann",
+      "ImgPath": "C:\\Users\\frederik.haag\\source\\repos\\KurzAberHaag\\KnowYourStudents\\bin\\Debug\\db\\IT2023y\\Jens_Grie\u00DFmann.jpg",
+      "LearningProgress": 0
+    },
+    {
+      "Name": "Marc Hansen",
+      "ImgPath": "C:\\Users\\frederik.haag\\source\\repos\\KurzAberHaag\\KnowYourStudents\\bin\\Debug\\db\\IT2023y\\Marc_Hansen.jpg",
+      "LearningProgress": 0
+    },
+    {
+      "Name": "Till Haubeck",
+      "ImgPath": "C:\\Users\\frederik.haag\\source\\repos\\KurzAberHaag\\KnowYourStudents\\bin\\Debug\\db\\IT2023y\\Till_Haubeck.jpg",
+      "LearningProgress": 0
+    }
+  ],
+  "SchoolClassName": "IT2023y"
+}

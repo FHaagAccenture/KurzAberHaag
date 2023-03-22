@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{2F905B85-45B1-4E16-A9EC-C82066386E75}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>WinExe</OutputType>
     <RootNamespace>KnowYourStudents</RootNamespace>
     <AssemblyName>KnowYourStudents</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -83,56 +83,56 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GameHandler.cs" />
-    <Compile Include="ClassOverview.cs">
+    <Compile Include="Handlers\StudentPickHandler.cs" />
+    <Compile Include="Forms\ClassOverview.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ClassOverview.Designer.cs">
+    <Compile Include="Forms\ClassOverview.Designer.cs">
       <DependentUpon>ClassOverview.cs</DependentUpon>
     </Compile>
-    <Compile Include="Gesichtserkennung.cs">
+    <Compile Include="Forms\Gesichtserkennung.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Gesichtserkennung.Designer.cs">
+    <Compile Include="Forms\Gesichtserkennung.Designer.cs">
       <DependentUpon>Gesichtserkennung.cs</DependentUpon>
     </Compile>
-    <Compile Include="Spellchecker.cs">
+    <Compile Include="Forms\Spellchecker.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Spellchecker.Designer.cs">
+    <Compile Include="Forms\Spellchecker.Designer.cs">
       <DependentUpon>Spellchecker.cs</DependentUpon>
     </Compile>
-    <Compile Include="LearnProgressHandler.cs" />
-    <Compile Include="StudentImageZoom.cs">
+    <Compile Include="Handlers\LearnProgressHandler.cs" />
+    <Compile Include="Forms\StudentImageZoom.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StudentImageZoom.Designer.cs">
+    <Compile Include="Forms\StudentImageZoom.Designer.cs">
       <DependentUpon>StudentImageZoom.cs</DependentUpon>
     </Compile>
-    <Compile Include="HomeWindow.cs">
+    <Compile Include="Forms\HomeWindow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HomeWindow.Designer.cs">
+    <Compile Include="Forms\HomeWindow.Designer.cs">
       <DependentUpon>HomeWindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="JsonHandler.cs" />
+    <Compile Include="Handlers\JsonHandler.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SchoolClass.cs" />
-    <Compile Include="Student.cs" />
-    <EmbeddedResource Include="ClassOverview.resx">
+    <Compile Include="Models\SchoolClass.cs" />
+    <Compile Include="Models\Student.cs" />
+    <EmbeddedResource Include="Forms\ClassOverview.resx">
       <DependentUpon>ClassOverview.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Gesichtserkennung.resx">
+    <EmbeddedResource Include="Forms\Gesichtserkennung.resx">
       <DependentUpon>Gesichtserkennung.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Spellchecker.resx">
+    <EmbeddedResource Include="Forms\Spellchecker.resx">
       <DependentUpon>Spellchecker.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StudentImageZoom.resx">
+    <EmbeddedResource Include="Forms\StudentImageZoom.resx">
       <DependentUpon>StudentImageZoom.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HomeWindow.resx">
+    <EmbeddedResource Include="Forms\HomeWindow.resx">
       <DependentUpon>HomeWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
